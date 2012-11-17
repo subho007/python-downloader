@@ -11,10 +11,13 @@ Requirements
 - Python >= 2.6
 - Python Request module ( https://github.com/kennethreitz/requests )
 - Bing Search API ( http://www.bing.com/developers/ )
+- BeautifulSoup Python module for google_downloader.py ( http://www.crummy.com/software/BeautifulSoup/ )
 
 Usage
 =====
 
+For Bing Search Downloader
+-------------------------
 Please set your API key in the script replacing `<BING-API-ID>`
 
 ```
@@ -28,6 +31,12 @@ Options:
   -f WEBFILE, --file=WEBFILE
                         Filetype to SEARCH
   -n NUM, --number=NUM  Number of results to SEARCH
+```
+For Google Search Downloader
+----------------------------
+
+```
+Usage: google-downloader.py [query] ext:filetype
 ```
 
 Author
