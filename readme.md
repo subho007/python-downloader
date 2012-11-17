@@ -8,9 +8,9 @@ for your fuzzing needs !
 Requirements
 ============
 
-Python >= 2.6
-Python Request module ( https://github.com/kennethreitz/requests )
-Bing Search API ( http://www.bing.com/developers/ )
+- Python >= 2.6
+- Python Request module ( https://github.com/kennethreitz/requests )
+- Bing Search API ( http://www.bing.com/developers/ )
 
 Usage
 =====
