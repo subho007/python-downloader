@@ -36,7 +36,19 @@ For Google Search Downloader
 ----------------------------
 
 ```
-Usage: google-downloader.py [query] ext:filetype
+./google-downloader.py --help
+Usage: google-downloader.py [options]
+
+Options:
+  -h, --help            show this help message and exit
+  -s SEARCH, --search=SEARCH
+                        keyword to SEARCH
+  -n NUM, --number=NUM  Number of results to SEARCH
+  -d DOMAIN, --domain=DOMAIN
+                        The url you want google.com or google.co.in, all you
+                        have to do is enter 'com' or 'co.in' etc.
+  -l LANGUAGE, --language=LANGUAGE
+                        Select your language (Default en)
 ```
 
 Author
