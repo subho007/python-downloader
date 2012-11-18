@@ -1,5 +1,5 @@
-Python mass downloader using BING Search API v2.0
-=================================================
+Python mass downloader using BING Search API v2.0 and Google Search
+===================================================================
 
 This small python script can be used to download files from the result obtained 
 by the search key provided. This is a small utility written for dummy mass download,
