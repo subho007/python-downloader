@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 '''
 This is designed for the new Azure Marketplace Bing Search API (released Aug 2012)
 
