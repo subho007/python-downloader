@@ -206,10 +206,30 @@ def search(query, tld='com', lang='en', num=10, start=0, stop=None, pause=2.0):
 # When run as a script, take all arguments as a search query and run it.
 if __name__ == "__main__":
     import sys
-    query = ' '.join(sys.argv[1:])
-    if query:
-        for url in search(query, stop=100):
+    from optparse import OptionParser
+    usage = "Usage: %prog [options]"
+    parser = OptionParser(usage)
+    parser.add_option("-s", "--search", dest="search", help="keyword to SEARCH")
+    parser.add_option("-n", "--number", dest="num", help="Number of results to SEARCH")
+    parser.add_option("-d", "--domain", dest="domain", help="The url you want google.com or google.co.in, all you have to do is enter 'com' or 'co.in' etc.")
+    parser.add_option("-l", "--language", dest="language", help="Select your language (Default en)")
+    (options, args) = parser.parse_args()
+    if(options.language == None):
+        olang = "en"
+    else:
+        olang = options.language
+    if(options.domain == None):
+        domain = "com"
+    else:
+        domain = options.domain
+    if(options.num == None):
+        number = 10
+    else:
+        number = options.number
+    if(options.search == None):
+        print "Wrong Parameters, use the -h or --help options for help"
+        sys.exit()
+    else:
+        for url in search(options.search, stop=number, tld=domain, lang=olang):
             print(url)
             os.system('wget -P ./files/ '+url)
-    else:
-        print "Usage: google-downloader.py [query] ext:filetype"
