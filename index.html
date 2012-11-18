@@ -28,7 +28,7 @@
         </ul>
       </header>
       <section>
-        <h1>Python mass downloader using BING Search API v2.0</h1>
+        <h1>Python mass downloader using BING Search API v2.0 and Google Search</h1>
 
 <p>This small python script can be used to download files from the result obtained 
 by the search key provided. This is a small utility written for dummy mass download,
@@ -61,7 +61,19 @@ Options:
 
 <h2>For Google Search Downloader</h2>
 
-<pre><code>Usage: google-downloader.py [query] ext:filetype
+<pre><code>./google-downloader.py --help
+Usage: google-downloader.py [options]
+
+Options:
+  -h, --help            show this help message and exit
+  -s SEARCH, --search=SEARCH
+                        keyword to SEARCH
+  -n NUM, --number=NUM  Number of results to SEARCH
+  -d DOMAIN, --domain=DOMAIN
+                        The url you want google.com or google.co.in, all you
+                        have to do is enter 'com' or 'co.in' etc.
+  -l LANGUAGE, --language=LANGUAGE
+                        Select your language (Default en)
 </code></pre>
 
 <h1>Author</h1>
