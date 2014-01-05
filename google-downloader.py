@@ -225,7 +225,7 @@ if __name__ == "__main__":
     if(options.num == None):
         number = 10
     else:
-        number = options.number
+        number = options.num
     if(options.search == None):
         print "Wrong Parameters, use the -h or --help options for help"
         sys.exit()
